@@ -1,0 +1,168 @@
+[2026-07-20 11:27:14] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:27:15] [ERROR] [main] Error: not enough values to unpack (expected 4, got 2) | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 76, in process_video
+    direction_angles = detect_direction(tracker_id, (center_x, center_y))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/direction_detector.py", line 54, in detect_direction
+    update_direction_history(tracker_id, box)
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/direction_detector.py", line 9, in update_direction_history
+    x1, y1, x2, y2 = box
+    ^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 2)
+
+[2026-07-20 11:30:14] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:31:03] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:33:38] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:34:09] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:35:53] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 11:58:21] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 12:20:35] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 12:22:59] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-20 12:22:59] [ERROR] [main] Error: reconnect_to_camera() takes 1 positional argument but 2 were given | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 52, in process_video
+    video_capture = reconnect_to_camera(source_path, logger)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: reconnect_to_camera() takes 1 positional argument but 2 were given
+
+[2026-07-20 12:27:22] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:00:56] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:01:06] [ERROR] [main] Error: '>=' not supported between instances of 'float' and 'str' | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 70, in process_video
+    colliding_vehicles = batch_collision_check(detections, frame, iou_threshold)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/collision.py", line 89, in batch_collision_check
+    if calculate_iou(box1, boxes[j]) >= iou_threshold:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'float' and 'str'
+
+[2026-07-20 15:02:27] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:04:51] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-20 15:04:51] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:15:41] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:17:58] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:24:10] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:26:43] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-20 15:26:43] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:29:44] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:35:24] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:53:19] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:53:21] [ERROR] [main] Error: batch_collision_check() missing 1 required positional argument: 'iou_threshold' | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 71, in process_video
+    colliding_vehicles = batch_collision_check(detections, frame, iou_threshold)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: batch_collision_check() missing 1 required positional argument: 'iou_threshold'
+
+[2026-07-20 15:54:20] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 15:59:16] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 16:02:21] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 16:04:38] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-20 16:04:38] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 16:08:04] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:14:15] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:18:01] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:22:13] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:27:22] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:32:54] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:36:47] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:44:58] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:48:08] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:52:52] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 16:56:19] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 17:01:18] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/vid6.mp4
+[2026-07-20 17:04:39] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 17:07:10] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-20 17:11:39] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 10:38:27] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:20:02] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:20:45] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:21:14] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:22:43] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:25:43] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:29:01] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:31:28] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:31:28] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:33:57] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:33:57] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:36:24] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:36:24] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:38:47] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:38:47] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:41:10] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:41:10] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:43:32] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:43:32] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:45:55] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:45:55] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:48:18] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:48:18] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:50:40] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:50:40] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:53:02] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:53:02] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:55:24] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:55:24] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 11:57:46] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 11:57:46] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 12:00:12] [ERROR] [main] Lost connection to camera /home/abhishek/Downloads/14-02-2026.mp4. Attempting to reconnect...
+[2026-07-21 12:00:12] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 15:58:48] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 15:59:05] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 17:15:49] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 17:15:58] [ERROR] [main] Error: 'Logger' object has no attribute 'exception' | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/data_sender.py", line 14, in send_to_api
+    response = client.post(api_url, json=vbv_file, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_client.py", line 1144, in post
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_client.py", line 812, in request
+    request = self.build_request(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/abhishek/Documents/myenv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 145, in process_video
+    send_to_api(vbv_file, api)
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/data_sender.py", line 28, in send_to_api
+    logger.exception("Unexpected error while sending vehicle data")
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'Logger' object has no attribute 'exception'
+
+[2026-07-21 17:20:10] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/14-02-2026.mp4
+[2026-07-21 17:20:24] [ERROR] [data_send] API request timed out
+[2026-07-21 17:20:51] [ERROR] [data_send] API request timed out
+[2026-07-21 17:20:56] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:01] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:06] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:16] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:21] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:27] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:32] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:39] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:44] [ERROR] [data_send] API request timed out
+[2026-07-21 17:21:49] [ERROR] [data_send] API request timed out

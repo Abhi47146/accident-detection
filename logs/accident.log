@@ -1,0 +1,16 @@
+[2026-09-10 15:13:37] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/CitroenC4Picasso_80.mp4
+[2026-09-10 15:13:39] [ERROR] [main] Error: cannot access local variable 'score' where it is not associated with a value | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 149, in process_video
+    if score >= 0.8:
+       ^^^^^
+UnboundLocalError: cannot access local variable 'score' where it is not associated with a value
+
+[2026-09-10 15:15:33] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/CitroenC4Picasso_80.mp4
+[2026-09-10 15:15:35] [ERROR] [main] Error: cannot access local variable 'left_avg_drop' where it is not associated with a value | Traceback: Traceback (most recent call last):
+  File "/home/abhishek/Downloads/accident_detection/accident_detection/main.py", line 151, in process_video
+    cv2.putText(frame,f"Left Avg Drop : {left_avg_drop:.2f}%",(20, 20),cv2.FONT_HERSHEY_SIMPLEX,0.7,(255,0,0),2)
+                                         ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'left_avg_drop' where it is not associated with a value
+
+[2026-09-10 15:16:08] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/CitroenC4Picasso_80.mp4
+[2026-09-10 15:18:40] [DEBUG] [main] Successfully reconnected to camera /home/abhishek/Downloads/CitroenC4Picasso_80.mp4
